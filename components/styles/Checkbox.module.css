@@ -1,0 +1,22 @@
+
+.input {
+    padding: 0.6rem;
+    margin: 0.6rem 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: var(--font-family);
+    transform: scale(1.5);
+    cursor: pointer;
+    position: relative;
+}
+
+.input:focus, .input:active {
+    border-color: var(--secondary-color);
+    outline: none;
+    box-shadow: none;
+}
+
+.input:checked {
+    accent-color: var(--secondary-color); 
+    border-color: var(--secondary-color);
+}
