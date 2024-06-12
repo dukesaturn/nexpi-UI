@@ -3,7 +3,8 @@
 First things first, let's grab the package from the repository:
 
 ```bash
-git clone https://github.com/dukesaturn/nexpi-UI```
+git clone https://github.com/dukesaturn/nexpi-UI
+```
 
 Next, you'll want to insert the `components` folder into the `app` route folder. Additionally, make sure to copy the `npx_global.css` file into the app folder.
 
