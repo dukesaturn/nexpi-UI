@@ -6,7 +6,7 @@ First things first, let's grab the package from the repository:
 git clone https://github.com/dukesaturn/nexpi-UI
 ```
 
-Next, you'll want to insert the `components` folder into the `app` route folder. Additionally, make sure to copy the `npx_global.css` file into the app folder.
+Next, you'll want to insert the `components` folder into the `app` folder of you app. Additionally, make sure to copy the `npx_global.css` file, that is in `theme` folder, into the `app` folder.
 
 Import, in layout.tsx
 
