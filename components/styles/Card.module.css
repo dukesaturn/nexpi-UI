@@ -1,13 +1,9 @@
 .card {
-    background-color: var(--background-color);
-    margin : 1.2rem;
+    background-color: var(--nxp-background-color);
+    margin: 1.2rem;
     padding: 1.2rem;
-    border : 1px solid var(--primary-color);
     text-align: center;
-    border : 1px solid var(--shadow-color);
-}
-
-.card:hover{
-    box-shadow: 0 8px 32px var(--secondary-color);
-    border : none;
+    border: 1px solid var(--nxp-secondary-shadow-color);
+    border-radius: 6px;
+    word-wrap: break-word; /* o overflow-wrap: break-word; */
 }

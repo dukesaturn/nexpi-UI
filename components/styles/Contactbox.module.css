@@ -1,0 +1,9 @@
+/* styles.module.css */
+.contactbox {
+    transition: transform 0.3s ease, fill 0.3s ease, color 0.3s ease; 
+}
+
+.contactbox:hover {
+    transform: scale(1.2);
+    fill: var(--nxp-secondary-color);
+}

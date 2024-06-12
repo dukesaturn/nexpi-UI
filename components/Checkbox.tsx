@@ -1,9 +1,9 @@
 import styles from './styles/Checkbox.module.css';
 
 interface CheckboxProps {
-    label: string;
-    checked: boolean;
-    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+    label?: string;
+    checked?: boolean;
+    onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
     style ?: React.CSSProperties;
 }
 

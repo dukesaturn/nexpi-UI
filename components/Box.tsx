@@ -1,16 +1,15 @@
 import React from 'react';
 import styles from './styles/Box.module.css';
 
-interface BoxProps {
+interface BoxProps extends React.HTMLAttributes<HTMLDivElement> {
     children?: React.ReactNode;
-    style?: React.CSSProperties;
 }
 
-const Box = ({ ...props }: BoxProps) => {
+const Box = ({ children, style, ...props }: BoxProps) => {
     return (
-    <div style={props.style} className={styles.Box}>
-        {props.children}
-    </div>
+        <div style={style} className={styles.Box} {...props}>
+            {children}
+        </div>
     );
 }
 

@@ -2,7 +2,7 @@ import styles from './styles/Typography.module.css';
 
 interface TypographyProps {
     children: React.ReactNode;
-    type?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+    type?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "light";
     style ?: React.CSSProperties;
 }
 
@@ -13,6 +13,7 @@ const Typography = ({ children, type, style }: TypographyProps) => {
            type === "h4" ? <h4 style={style} className={styles.h4}>{children}</h4> :
            type === "h5" ? <h5 style={style} className={styles.h5}>{children}</h5> :
            type === "h6" ? <h6 style={style} className={styles.h6}>{children}</h6> :
+           type === 'light' ? <p style={style}  className={styles.abstract}>{children}</p> :
            <p style={style} className={styles.p}>{children}</p>;
 }
 

@@ -1,9 +1,9 @@
 
 .button {
-    background-color: var(--secondary-color); 
+    background-color: var(--nxp-secondary-color); 
     border: 1px solid transparent;
-    color: var(--background-color);
-    border-radius: var(--border-radius);
+    color: var(--nxp-background-color);
+    border-radius: var(--nxp-border-radius);
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -13,7 +13,7 @@
     margin-left: 1rem;
     margin-right: 1rem;
     cursor: pointer;
-    font-family: var(--font-family);
+    font-family: var(--nxp-font-family);
     box-sizing: border-box;
 }
 

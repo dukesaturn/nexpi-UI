@@ -6,9 +6,14 @@ import * as Icons from 'react-icons/fa';
 import Separator from './Separator';
 import Link from 'next/link';
 
+type MenuItem = { name: string; icon: string; callback?: () => void; } | { comp: React.ReactElement; };
+
 interface DropdownProps {
-    menuItems: { name: string, icon: string, path?: string, callback?: () => void }[];
+    menuItems: MenuItem[];
     style?: React.CSSProperties;
+    clickIconColor?: string;
+    iconsColor?: string;
+    className?: string;
 }
 const getIconByName = (name: string): IconType | null => {
     const IconComponent = (Icons as any)[name];
@@ -34,19 +39,25 @@ const Dropdown: React.FC<DropdownProps> = ({ ...props }: DropdownProps) => {
     }, []);
 
     return (
-        <div className={styles.dropdown} style={{ backgroundColor: 'var(--primary-color)' }} ref={dropdownRef}>
-            <div style={props.style} style={{ marginRight: '1.5rem' }} onClick={() => setIsOpen(!isOpen)}>
-                {TriggerIcon && <TriggerIcon style={{ margin: 0 }} size={25} color='var(--secondary-color)' />}            </div>
+        <div className={styles.dropdown} ref={dropdownRef}>
+            <div style={props.style}  onClick={() => setIsOpen(!isOpen)}>
+                {TriggerIcon && <TriggerIcon style={{ margin: 0 }} size={25} color={props.clickIconColor ? props.clickIconColor : 'var(--nxp-secondary-color)'} />}            </div>
             {isOpen && (
-                <div className={`${styles.dropdownMenu} ${isOpen ? styles.open : ''}`}>
+                <div style={props.style}  className={`${styles.dropdownMenu} ${isOpen ? styles.open : ''}`}>
                     <ul>
                         {props.menuItems.map((item, index) => {
-                            const IconComponent = getIconByName(item.icon);
-                            return (
-                                <li key={index} onClick={item.callback}>
-                                    {IconComponent && <IconComponent />} {item.name}
-                                </li>
-                            );
+                            if ('comp' in item) {
+                                if (React.isValidElement(item.comp)) {
+                                    return item.comp;
+                                }
+                            } else {
+                                const IconComponent = getIconByName(item.icon);
+                                return (
+                                    <li key={index} onClick={item.callback}>
+                                        {IconComponent && <IconComponent color={props.iconsColor ? props.iconsColor : 'var(--nxp-primary-color)'} />} {item.name}
+                                    </li>
+                                );
+                            }
                         })}
                     </ul>
                 </div>
