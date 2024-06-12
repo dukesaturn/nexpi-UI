@@ -8,6 +8,18 @@ git clone https://github.com/dukesaturn/nexpi-UI
 
 Next, you'll want to insert the `components` folder into the `app` route folder. Additionally, make sure to copy the `npx_global.css` file into the app folder.
 
+Import, in layout.tsx
+
+```javascript
+import { Inter } from "next/font/google";
+import "./npx_global.css";
+```
+
+And in the body:
+
+```javascript 
+      <body color='var(--nxp-background-color)' className={inter.className}>
+```
 
 
 Now, it's time to dive in and have some fun with it!
