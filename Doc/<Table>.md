@@ -2,9 +2,12 @@
 
 Here is a Table component that displays data in a tabular format.
 
-The Table component accepts the following prop:
+## Props
 
-    * data: An array of objects where each object represents a row in the table, and the keys of the objects represent the column headers.
+- **data**: `Array<object>`
+  - An array of objects where each object represents a row in the table. 
+  - The keys of the objects represent the column headers.
+
   
 To use the Table component, you can include it in your JSX as shown below:
 

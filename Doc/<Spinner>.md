@@ -3,7 +3,7 @@
 The Spinner component displays a loading spinner animation.
 Props
 
-    * style (optional): CSS properties to customize the style of the spinner.
+   **style** (optional): CSS properties to customize the style of the spinner.
 
 ```javascript
     <Spinner/>

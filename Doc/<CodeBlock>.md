@@ -1,13 +1,15 @@
 # <CodeBlock>
 
-Here is a CodeBlock component that allows you to display and copy syntax-highlighted code snippets.
+The `CodeBlock` component allows you to display syntax-highlighted code snippets that can be copied.
 
-The CodeBlock component accepts the following props:
+### Props
 
-    * language: A string that specifies the programming language of the code.
-    * value: A string that contains the code to be displayed.
+- **language**: `string`
+  - Specifies the programming language of the code snippet.
 
-To use the CodeBlock component, you can include it in your JSX as shown below:
+- **value**: `string`
+  - Contains the actual code to be displayed.
+
 
 ```javascript
 <CodeBlock 

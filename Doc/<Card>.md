@@ -1,6 +1,11 @@
 # <Card>
-Here is a simple `Card` component for inserting elements inside.
-We pass the components to insert as `children`.
+The `Card` component provides a styled container for organizing and displaying content in a React application.
+
+### Props
+
+- **children** (`React.ReactNode`, optional): Child elements to render inside the card.
+- **className** (`string`, optional): Additional CSS class to apply to the card component.
+- **style** (`React.CSSProperties`, optional): Custom CSS styles to apply to the card.
 
 ```javascript
 

@@ -1,5 +1,11 @@
 # <BlurHeader>
-It's a simple opaque Header. 
+The `BlurHeader` component renders a header with a blurred background.
+
+## Props
+
+- **children** (`React.ReactNode`, optional): Content to be displayed inside the header.
+- **className** (`string`, optional): Additional CSS class names for customization.
+- **style** (`React.CSSProperties`, optional): Additional CSS styles to be applied to the header.
 
 ```javascript
     <div style={{ maxHeight: '180px', overflowY: 'scroll' }}>

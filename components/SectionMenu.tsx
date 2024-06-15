@@ -12,7 +12,7 @@ interface SectionMenuProps {
 const SectionMenu = ({ style, NavItems, title }: SectionMenuProps) => {
     
     return (
-        <div>
+        <div className={styles.sectionmenuWrapper}>
 
         <nav style={style} className={styles.sectionmenu}>
         <Typography style={{color : 'var(--nxp-shadow-color)'}}>{title ? title : 'On this page' }</Typography>

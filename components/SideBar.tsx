@@ -17,6 +17,7 @@ interface SideBarProps {
     style?: React.CSSProperties;
     NavItems: NavItem[];
     children?: React.ReactNode;
+    close?: boolean;
 }
 
 const getIconByName = (name: string): IconType | null => {
@@ -24,9 +25,10 @@ const getIconByName = (name: string): IconType | null => {
     return IconComponent || null;
 }
 
-const SideBar = ({ style, NavItems, children }: SideBarProps) => {
+const SideBar = ({ style, NavItems, children, close }: SideBarProps) => {
 
     const [mouse, setMouse] = useState<boolean[]>([]);
+    const [open, setOpen] = useState<boolean>(close ? close : true);
     const handleItemClick = (index: number) => {
         const newMouse = [...mouse];
         newMouse[index] = !newMouse[index]
@@ -35,6 +37,7 @@ const SideBar = ({ style, NavItems, children }: SideBarProps) => {
 
 
     return (
+
         <nav style={style} className={styles.nav}>
             {children && <div>{children}</div>}
             <ul>
@@ -120,13 +123,12 @@ const SideBar = ({ style, NavItems, children }: SideBarProps) => {
                                         } </>)
                             }
 
-
-
                         </li>
                     )
                 })}
             </ul>
         </nav>
+
     );
 };
 

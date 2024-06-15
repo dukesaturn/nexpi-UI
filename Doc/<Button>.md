@@ -1,7 +1,17 @@
 # <Button>
 
-It's a simple component that displays a `button` on the screen.
-To use it
+IThe `Button` component provides a customizable button interface for React applications. It supports optional onClick behavior, type specification, custom styles, and child elements.
+
+### Props
+
+- **onClick** (`() => void`, optional): Callback function invoked when the button is clicked.
+- **type** (`'button' | 'submit' | 'reset'`, optional): Specifies the type of button.
+- **style** (`React.CSSProperties`, optional): Custom styles to apply to the button.
+- **children** (`React.ReactNode`, optional): Child elements rendered within the button.
+- **factory** (`'primary' | 'secondary' | 'void'`, optional): Defines the color scheme for the button. If not provided, defaults to `'secondary'`. Possible values:
+  - `'primary'`: Uses `--nxp-primary-color`.
+  - `'secondary'`: Uses `--nxp-secondary-color`.
+  - `'void'`: Uses `--nxp-backgruond-color`.
 
 ```javascript
 

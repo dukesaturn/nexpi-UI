@@ -11,12 +11,10 @@
 }
 
 .input:focus, .input:active {
-    border-color: var(--nxp-secondary-color);
-    outline: none;
-    box-shadow: none;
+        box-shadow: none;
 }
+
 
 .input:checked {
     accent-color: var(--nxp-primary-color); 
-    border-color: var(--nxp-secondary-color);
 }

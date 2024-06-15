@@ -2,10 +2,19 @@
 
 The Dropdown component is a versatile and customizable dropdown menu component built using React. It allows for the inclusion of menu items with icons and callbacks, or custom React elements.
 
-* menuItems: An array of menu items. Each item can either be an object with name, icon, and an optional callback, or an object with a comp property which is a React element.
-* style (optional): An object to apply custom styles to the dropdown trigger element.
-* clickIconColor: This property refers to the color of an icon displayed in the dropdown menu that represents an action, typically when it's clicked. For instance, it could be the color of an icon indicating an action like opening a submenu or closing the dropdown.
-* iconsColor: This property represents the color of icons displayed within the dropdown menu. These icons could be decorative or functional, providing visual cues or representing actions. Setting this property allows customization of the color of all icons within the dropdown menu to maintain consistency or match the overall design scheme.
+### Props
+
+- **menuItems**: `Array<{ name: string, icon?: React.ReactNode, callback?: () => void } | { comp: React.ReactNode }>`
+  - An array of menu items. Each item can either be an object with `name`, `icon` (optional), and an optional `callback`, or an object with a `comp` property which is a React element.
+
+- **style** (optional): `object`
+  - An object to apply custom styles to the dropdown trigger element.
+
+- **clickIconColor**: `string`
+  - Refers to the color of an icon displayed in the dropdown menu that represents an action when clicked. For example, this could be the color of an icon used for actions like opening a submenu or closing the dropdown.
+
+- **iconsColor**: `string`
+  - Represents the color of icons displayed within the dropdown menu. These icons may serve decorative or functional purposes, providing visual cues or representing actions. Setting this property allows customization of all icons' colors within the dropdown menu for consistency or to match the design scheme.
 
 ```javascript
 const menuItems = [

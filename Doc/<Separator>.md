@@ -1,8 +1,8 @@
 # <Separator>
 The Separator component generates a horizontal line to visually segregate content.
-Props
+## Props
 
-    * style (optional, React.CSSProperties): Additional CSS styles to be applied to the separator.
+   **style** (optional, React.CSSProperties): Additional CSS styles to be applied to the separator.
 
 ```javascript
 <Separator />

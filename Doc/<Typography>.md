@@ -1,11 +1,17 @@
 # <Typography>
 
 The Typography component is a flexible component for rendering text with different styles and sizes.
-Props
+## Props
 
-    * children (React.ReactNode): The text content to be rendered.
-    * type (optional, "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "light"): The type of typography element to render.
-    * style (optional, React.CSSProperties): Additional CSS styles to be applied to the typography element.
+- **children** (`React.ReactNode`):
+  - The text content to be rendered.
+
+- **type** (optional, `"h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "light"`):
+  - The type of typography element to render.
+
+- **style** (optional, `React.CSSProperties`):
+  - Additional CSS styles to be applied to the typography element.
+
 
 Usage
 

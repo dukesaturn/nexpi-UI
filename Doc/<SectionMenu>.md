@@ -1,12 +1,16 @@
 # <SectionMenu>
 
 The SectionMenu component provides a menu for navigating sections within a page.
-Props
+## Props
 
-    * NavItems (Array<{ name: string, path: string }> | null | undefined): An array of navigation items, 
-    * where each item contains a name and a path. If null or undefined, no navigation items will be displayed.
-    * style (optional, React.CSSProperties): Additional CSS styles to apply to the menu.
-    * title (optional, string): The title of the menu. If not provided, defaults to 'On this page'.
+- **NavItems** (`Array<{ name: string, path: string }> | null | undefined`):
+  - An array of navigation items, where each item contains a `name` and a `path`. If `null` or `undefined`, no navigation items will be displayed.
+
+- **style** (optional, `React.CSSProperties`):
+  - Additional CSS styles to apply to the menu.
+
+- **title** (optional, `string`):
+  - The title of the menu. If not provided, defaults to 'On this page'.
 
 ```javascript
 

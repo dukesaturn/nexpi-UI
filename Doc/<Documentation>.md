@@ -4,10 +4,16 @@ The 'Documentation' component allows displaying documentation, including both Ma
 
 The component accepts the following props:
 
-    * path: A string representing the path of the documentation file.
-    * id (optional): A string representing the ID of the component.
-    * children (optional): An array of React.ReactNode, used to insert JSX components directly 
-    * into the documentation.
+### Props
+
+- **path**: `string`
+  - Represents the path of the documentation file.
+
+- **id** (optional): `string`
+  - Represents the ID of the component.
+
+- **children** (optional): `React.ReactNode[]`
+  - An array of React elements used to insert JSX components directly into the documentation.
 
 The Documentation component allows displaying documentation, including both Markdown text and code. 
 

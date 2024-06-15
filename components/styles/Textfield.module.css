@@ -8,6 +8,7 @@
     border: 1px solid var(--nxp-shadow-color); 
     box-sizing: border-box;
     border-radius: 6px;
+    width: 200px;
     
 }
 

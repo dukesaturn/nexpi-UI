@@ -2,11 +2,16 @@
 
 The Logo component is a simple and flexible image component that can be used to display a logo with customizable properties.
 
-The Logo component accepts the following props:
+### Props
 
-    * src: A string that specifies the URL of the image. This prop is required.
-    * alt (optional): A string that provides alternative text for the image.
-    * style (optional): An object to apply custom styles to the image.
+- **src**: `string` (required)
+  - Specifies the URL of the image.
+
+- **alt** (optional): `string`
+  - Provides alternative text for the image.
+
+- **style** (optional): `React.CSSProperties`
+  - An object to apply custom styles to the image.
 
 ```javascript
 <Logo src="/logo.png" alt="Company Logo" />

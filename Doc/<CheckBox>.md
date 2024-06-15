@@ -1,13 +1,21 @@
 # <CheckBox>
 
-Here is a simple Checkbox component that allows users to select or deselect an option.
+The Checkbox component allows users to select or deselect an option.
 
-The Checkbox component accepts the following props:
+### Props
 
-    * label: A string that defines the text label next to the checkbox.
-    * checked: A boolean value that determines whether the checkbox is checked or not.
-    * onChange: A function that is called when the state of the checkbox changes.
-    * style (optional): An object to apply custom styles to the checkbox input element.
+- **label**: `string`
+  - Defines the text label next to the checkbox.
+
+- **checked**: `boolean`
+  - Determines whether the checkbox is checked (`true`) or not (`false`).
+
+- **onChange**: `function`
+  - Callback function invoked when the state of the checkbox changes.
+
+- **style** (optional): `object`
+  - Custom styles to apply to the checkbox input element.
+  - 
 ```inline```
 
 ```javascript

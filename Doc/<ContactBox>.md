@@ -1,14 +1,18 @@
 # <ContactBox>
 
-Here is a Contactbox component that displays a list of contact information including social media links, phone number, and email address.
+The `ContactBox` component displays contact information including social media links, phone number, and email address.
 
-The Contactbox component accepts the following props:
+### Props
 
-    * contacts: An array of objects, where each object contains platform and link properties.
-    * phone (optional): A string representing the phone number.
-    * email (optional): A string representing the email address.
-  
-To use the Contactbox component, you can include it in your JSX as shown below:
+- **contacts**: `Array<{ platform: string, link: string }>`
+  - An array of objects where each object contains `platform` (string) and `link` (string) properties representing social media links.
+
+- **phone** (optional): `string`
+  - Represents the phone number.
+
+- **email** (optional): `string`
+  - Represents the email address.
+
 
 ```javascript
 const contacts = [

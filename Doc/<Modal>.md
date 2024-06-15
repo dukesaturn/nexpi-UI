@@ -2,10 +2,19 @@
 
 The Modal component provides a simple way to create modal dialogs in React applications. It allows you to control the visibility of the modal and includes a mechanism to handle closing events.
 
-* isOpen (boolean, required): Determines whether the modal is open or closed.
-* onClose (function, required): Callback function invoked when the modal is closed.
-* children (ReactNode, required): The content to be rendered within the modal.
-* style (optional): An object to apply custom styles to the modal.
+### Props
+
+- **isOpen** (`boolean`, required):
+  - Determines whether the modal is open or closed.
+
+- **onClose** (`function`, required):
+  - Callback function invoked when the modal is closed.
+
+- **children** (`ReactNode`, required):
+  - The content to be rendered within the modal.
+
+- **style** (optional):
+  - An object to apply custom styles to the modal.
 
 ```javascript
 "use client";

@@ -2,7 +2,14 @@
     font-family: var(--nxp-font-family);
     color : var(--nxp-shadow-color);
     background: var(--nxp-background-color);
+    overflow-y: auto;
+    max-height: 750px;
+    max-width: 400px;
   }
+
+  .sectionmenuWrapper {
+    overflow: visible;
+}
   
   .sectionmenu ul{
   padding: 0;
