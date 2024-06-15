@@ -34,8 +34,8 @@ const sections = getChildSection(children, 'Section');
 
 This function takes two parameters:
 
-    * children: The children of a parent component.
-    * typeName: The type of child component to search for (e.g., 'Section').
+   **children**: The children of a parent component.
+  **typeName**: The type of child component to search for (e.g., 'Section').
 
 It returns an array of navigation items, each containing a name and a path based on the child components found within the parent component's children.
 

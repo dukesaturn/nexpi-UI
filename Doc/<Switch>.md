@@ -1,6 +1,7 @@
 # <Switch>
 
-The Switch component is a toggle switch UI element designed to toggle between states, represented visually as a checkbox with a slider.
+The Switch component is a toggle switch UI element designed to toggle between states, 
+represented visually as a checkbox with a slider.
 
 ### Props
 

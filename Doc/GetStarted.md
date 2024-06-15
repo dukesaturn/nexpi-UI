@@ -27,8 +27,8 @@ Buon divertimento!
 
 Dependencies:
 
-    * react-icons (^5.2.1): A comprehensive library of icons for React.
-    * react-syntax-highlighter (^15.5.0): Syntax highlighting component for React.
-    * rehype-katex (^7.0.0): A plugin for rehype to support LaTeX math syntax in HTML.
-    * remark-math (^6.0.0): A remark plugin to support LaTeX math syntax in Markdown.
+  ***react-icons (^5.2.1)**: A comprehensive library of icons for React.
+  **react-syntax-highlighter (^15.5.0)**: Syntax highlighting component for React.
+  **rehype-katex (^7.0.0)**: A plugin for rehype to support LaTeX math syntax in HTML.
+  **remark-math (^6.0.0)**: A remark plugin to support LaTeX math syntax in Markdown.
 
