@@ -54,7 +54,13 @@ const Slider = ({ percent, factory = 'secondary', onChange }: ProgressProps) => 
 
     useEffect(() => {
         const canvas = canvasRef.current;
+        if(!canvas){
+            return;
+        }
         const ctx = canvas?.getContext('2d');
+        if(!ctx){
+            return;
+        }
 
         const computedStyle = getComputedStyle(document.documentElement);
         const color = computedStyle.getPropertyValue(getColor(factory));

@@ -28,20 +28,21 @@ const getColor = (factory: 'primary' | 'secondary' | 'success' | 'warning' | 'da
 }
 
 const Progress = ({ ...props }: ProgressProps) => {
-    const canvasRef = useRef(null)
-
+    const canvasRef = useRef<HTMLCanvasElement>(null);
 
     useEffect(() => {
         const canvas = canvasRef.current;
+        if (!canvas) return;
         const ctx = canvas.getContext('2d');
+        if (!ctx) return; 
 
         const computedStyle = getComputedStyle(document.documentElement);
         const color = computedStyle.getPropertyValue(getColor(props.factory || 'secondary'));
 
         if (ctx) {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            ctx.fillStyle = color.trim(); // Usa il colore ottenuto
-            ctx.fillRect(0, 0, props.percent * 3, 15); // Usa percent per la larghezza
+            ctx.fillStyle = color.trim(); 
+            ctx.fillRect(0, 0, props.percent * 3, 15);
         }
     }, [props.percent]);
 

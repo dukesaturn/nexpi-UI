@@ -23,11 +23,11 @@ const getIconByName = (name: string): IconType | null => {
 const Dropdown: React.FC<DropdownProps> = ({ ...props }: DropdownProps) => {
     const [isOpen, setIsOpen] = useState(false);
     const TriggerIcon = getIconByName('FaBars');
-    const dropdownRef = useRef(null);
+    const dropdownRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
-            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+            if (dropdownRef.current && event.target instanceof Node && !dropdownRef.current.contains(event.target)) {
                 setIsOpen(false);
             }
         }
