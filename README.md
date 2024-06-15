@@ -1,4 +1,5 @@
 # Get Started
+`This is a Beta Version`
 
 First things first, let's grab the package from the repository:
 
@@ -32,4 +33,3 @@ Dependencies:
     rehype-katex (^7.0.0): A plugin for rehype to support LaTeX math syntax in HTML.
     remark-math (^6.0.0): A remark plugin to support LaTeX math syntax in Markdown.
 
-You can read the documentation here: http://dksengine.it/projects/nexpi
