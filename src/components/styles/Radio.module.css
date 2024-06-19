@@ -1,0 +1,15 @@
+
+
+.radio {
+    margin-bottom: 10px;
+    accent-color: var(--nxp-secondary-colo); 
+    text-align: left;
+    color: var(--nxp-primary-color);
+
+}
+
+.radio input[type="radio"] {
+    margin-right: 6px;
+
+}
+

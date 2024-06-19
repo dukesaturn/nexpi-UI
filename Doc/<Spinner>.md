@@ -3,17 +3,25 @@
 The Spinner component displays a loading spinner animation.
 Props
 
-   **style** (optional): CSS properties to customize the style of the spinner.
+- **style** (optional): 
+  - CSS properties to customize the style of the spinner.
+- **factory** (optional, `'notice' | 'info' | 'success' | 'warning' | 'error' | 'primary' | 'secondary`):
+  - The type of spinner box, default is 'secondary'
 
 ```javascript
     <Spinner/>
+    <Spinner factory='primary'/>
 ```
 
 ```inline```
 
-You can customize as below: 
+Other colors:
 ```javascript
-    <Spinner style={{border : '8px solid white' , borderTop: '8px solid var(--nxp-secondary-color)', width : '40px', height : '40px'}} />
+    <Spinner factory='info' />
+    <Spinner factory='notice' />
+    <Spinner factory='warning' />
+    <Spinner factory='error' />
+    <Spinner factory='success' />
 ```
 
 ```inline```

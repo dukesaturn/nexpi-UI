@@ -1,4 +1,4 @@
-# <WaningBox>
+# <WarningBox>
 
 The WarningBox component is a versatile component for displaying various types of warnings or notifications with an associated icon.
 ## Props

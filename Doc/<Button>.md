@@ -33,11 +33,15 @@ By default, it has three main types: `primary`, `secondary`, `void`
 
 ```inline```
 
-Of course, it's possible to customize the button with all the props that can be assigned to `<button>`.
+And the nexpi color set:
 
 ```javascript
 
-<Button style={{ backgroundColor: 'var(--nxp-blue)' }}>Click me </ Button>
+    <Button factory='info'>Click me </ Button>
+    <Button factory='notice'>Click me </ Button>
+    <Button factory='warning'>Click me </ Button>
+    <Button factory='error'>Click me </ Button>
+    <Button factory='success'>Click me </ Button>
 ```
 
 ```inline```

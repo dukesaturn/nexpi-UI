@@ -1,0 +1,10 @@
+.blurheader {
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    backdrop-filter: blur(10px); 
+    background-color: transparent;    
+    position: sticky;
+    top: 0;
+  }
+  

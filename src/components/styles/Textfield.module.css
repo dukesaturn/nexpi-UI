@@ -1,0 +1,24 @@
+.input {
+    padding: 0.6rem;
+    font-family: var(--nxp-font-family);
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: 1px solid var(--nxp-shadow-color); 
+    box-sizing: border-box;
+    border-radius: 6px;
+    
+}
+
+.input:focus {
+    border: 1px solid var(--nxp-secondary-color); 
+}
+
+.label {
+    margin-right: 1rem;
+    font-size: 12px;
+    color: var(--nxp-primary-color);
+}
+
+
+

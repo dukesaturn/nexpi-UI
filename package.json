@@ -1,0 +1,32 @@
+{
+  "name": "nexpi-ui",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack --mode production",
+    "test" : "webpack --display-error-details"
+  },
+  "keywords": [],
+  "author": "dksEngine",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "next": "14.2.3",
+    "next-themes": "^0.3.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.2.1",
+    "react-syntax-highlighter": "^15.5.0",
+    "rehype-katex": "^7.0.0",
+    "remark-math": "^6.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.24.7",
+    "@types/react": "^18.3.3",
+    "babel-loader": "^9.1.3",
+    "react": "^18.3.1",
+    "typescript": "^5.4.5",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

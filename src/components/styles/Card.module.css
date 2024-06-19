@@ -1,0 +1,10 @@
+.card {
+    background-color: var(--nxp-background-color);
+    margin: 1.2rem;
+    padding: 1.2rem;
+    text-align: center;
+    border: 1px solid var(--nxp-secondary-shadow-color);
+    border-radius: 6px;
+    word-wrap: break-word; /* o overflow-wrap: break-word; */
+    overflow: auto;
+}

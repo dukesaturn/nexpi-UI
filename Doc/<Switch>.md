@@ -20,3 +20,16 @@ represented visually as a checkbox with a slider.
 ```
 
 ```inline```
+
+Other Nexpi color: 
+
+```javascript
+    <Switch factory='primary' callBackSwitch={() => setIsOpen(!isOpen)} />
+    <Switch factory='notice' callBackSwitch={() => setIsOpen(!isOpen)} />
+    <Switch factory='info' callBackSwitch={() => setIsOpen(!isOpen)} />
+    <Switch factory='error' callBackSwitch={() => setIsOpen(!isOpen)} />
+    <Switch factory='warning' callBackSwitch={() => setIsOpen(!isOpen)} />
+    <Switch factory='success' callBackSwitch={() => setIsOpen(!isOpen)} />
+```
+
+```inline```

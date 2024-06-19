@@ -1,0 +1,11 @@
+
+.hr {
+    border: none;
+    height: 1px;
+    border-top: 1px solid var(--nxp-secondary-shadow-color);
+}
+
+.gradient {
+    background: linear-gradient(to right, var(--nxp-background-color), var(--nxp-primary-color), var(--nxp-background-color));
+    border-top: none;
+}

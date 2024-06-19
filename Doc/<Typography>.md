@@ -26,6 +26,9 @@ To use the Typography component, you can include it in your JSX as shown below:
             <Typography type="h5">Heading 5</Typography>
             <Typography type="h6">Heading 6</Typography>
             <Typography type="light">Light Text</Typography>
+            <Typography>Normal Test</Typography>
+            <Typography type="micro">Micro Text</Typography>
+
         </div>
 ```
 

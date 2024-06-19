@@ -37,7 +37,7 @@ You can also customize the style of the dropdown trigger element using the style
 
 <Dropdown
     menuItems={menuItems}
-    style={{ margin: '10px', backgroundColor: 'var(--nxp-light-green)' }}
+    style={{ margin: '10px'}}
     clickIconColor="var(--nxp-violet)"
     iconsColor="purple"
 />

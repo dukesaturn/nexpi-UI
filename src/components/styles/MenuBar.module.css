@@ -1,0 +1,67 @@
+/* styles/SideBar.module.css */
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+
+.nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: center; /* Aggiunto per allineare verticalmente gli elementi */
+}
+
+.nav li {
+    position: relative;
+    font-size: 13px;
+    color: var(--nxp-shadow-color);
+
+}
+
+.nav a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.nav a:hover {
+    color: var(--nxp-primary-color);
+    border-radius: 4px; /* Arrotonda gli angoli */
+}
+
+.nav .parent {
+    cursor: pointer;
+}
+
+.nav .parent ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--nxp-background-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0.5rem 0;
+    flex-direction: column;
+}
+
+.nav .parent:hover ul {
+    display: block;
+}
+
+.nav .parent ul li {
+    margin: 0;
+}
+
+.nav .icon {
+}
