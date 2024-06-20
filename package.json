@@ -1,6 +1,6 @@
 {
   "name": "nexpi-ui",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "An elegant and minimalist Next.js 14 component library",
   "main": "lib/index.js",
   "files": [

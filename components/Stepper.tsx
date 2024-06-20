@@ -1,9 +1,8 @@
 "use client";
 import React from 'react';
-import Card from './Card';
-import Button from './Button';
-import Typography from './Typography';
 import { useState } from 'react'
+import Button from './Button';
+import Card from './Card';
 
 interface StepItem {
     data: React.ReactNode;
@@ -51,10 +50,10 @@ const Stepper = ({ steps }: StepperProps) => {
             </div>
             <Card>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                    <div >
                         {steps[currentStepIndex].data}
                     </div>
-                    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%' }}>
+                    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%', overflow : 'auto' }}>
                         {currentStepIndex !== 0 && (
                             <Button factory='void' onClick={handleBefore}>Before</Button>
                         )}

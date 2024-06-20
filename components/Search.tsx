@@ -39,6 +39,7 @@ const Search = ({ onSearch, factory, placeholder, onClick }: SearchProps) => {
                     borderRadius: '8px',
                     backgroundColor: 'var(--nxp-secondary-shadow-color)',
                     border: 'none',
+                    color : 'black'
                 }}
                 placeholder={placeholder || 'Search'}
                 value={searchText}
