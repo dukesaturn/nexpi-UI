@@ -17,14 +17,14 @@ How Can You Contribute?
 
 To start contributing, follow these steps:
 
-    - **Fork the repository and clone it to your local machine.**
-    - **Install dependencies: npm install or yarn install.**
-    - **Create a new branch: git checkout -b feature/your-feature-name.**
-    - ** Make your changes.**
-    - ** Make or update documentation **
-    - ** Commit your changes: git commit -am 'Add new feature'.**
-    - **Push to the branch: git push origin feature/your-feature-name.**
-    - **Submit a pull request detailing your changes and the problem they solve.**
+- **Fork the repository and clone it to your local machine.**
+- **Install dependencies: npm install or yarn install.**
+- **Create a new branch: git checkout -b feature/your-feature-name.**
+- ** Make your changes.**
+- ** Make or update documentation **
+- ** Commit your changes: git commit -am 'Add new feature'.**
+- **Push to the branch: git push origin feature/your-feature-name.**
+- **Submit a pull request detailing your changes and the problem they solve.**
 
 ## Code of Conduct
 
