@@ -1,17 +1,26 @@
 {
-  "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "jsx": "preserve",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true
-  },
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
-}
+    "include": ["components"],
+    "exclude": [
+      "dist",
+      "node_modules"
+    ],
+    "compilerOptions": {
+      "module": "esnext",
+      "lib": ["dom", "esnext"],
+      "importHelpers": true,
+      "declaration": true,
+      "sourceMap": true,
+      "rootDir": "./components",
+      "outDir": "./lib",
+      "strict": true,
+      "noImplicitReturns": true,
+      "noFallthroughCasesInSwitch": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "moduleResolution": "node",
+      "jsx": "react",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true
+    }
+  }
