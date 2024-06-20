@@ -18,9 +18,9 @@ The Modal component provides a simple way to create modal dialogs in React appli
 
 ```javascript
 "use client";
-import Modal from '@/app/components/Modal';
+import Modal from 'nexpi-ui/lib/Modal';
 import { useState } from 'react';
-import Button from '@/app/components/Button';
+import Button from 'nexpi-ui/lib/Button';
 
 const Component = () => {
     const [isOpen, setIsOpen] = useState(false);

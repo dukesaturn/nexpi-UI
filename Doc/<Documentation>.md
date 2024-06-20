@@ -34,8 +34,8 @@ In contrast to Next.js 14, where JSX is directly inserted into .mdx files, the a
 In the parent component:
 
 ```javascript
-import Button from "@/app/components/Button"
-import Documentation from "@/app/components/Documentation"
+import Button from "nexpi-ui/lib/Button"
+import Documentation from "nexpi-ui/lib/Documentation"
 
 const inline1 = <Button>Click me </ Button>
 const Chuncks = [inline1];
