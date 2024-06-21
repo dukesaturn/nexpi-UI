@@ -1,4 +1,4 @@
-# <NavBar>
+# <MenuBar>
 
 The `MenuBar` component is used to render a navigational menu with optional icons and sub-items. It supports dynamic rendering of navigation links and includes a collapsible feature.
 
